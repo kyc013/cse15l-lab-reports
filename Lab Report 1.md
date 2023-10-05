@@ -10,7 +10,7 @@ When **ls** is commanded with a path to a directory, the files and folders withi
 When **ls** is commanded with a path to a file,....
 
 When **cat** is commanded without any arugements, then the prompt waits for the user to either type a message so that it could be printed or to end the printing stage.
-When **cat** is commanded with a path to a directory, there is an error.
+When **cat** is commanded with a path to a directory, there is an error as cat is used to print a content of a file.
 When **cat** is commanded with a path to a file, the contents of the specified file is printed in its entirety.
 
 
