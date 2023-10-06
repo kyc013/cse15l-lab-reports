@@ -1,15 +1,17 @@
 Some of the basic filesystem commands we learned today was **cd**, **ls**, and **cat**.
-**cd** is used for changing directory, **ls** is used for listing all the content in the directory, while **cat** prints whichever file the user selects.
+**cd** is used for changing directory,
+**ls** is used for listing all the files in the directory,
+while **cat** prints the cnontents of whichever file the user selects.
 
-When **cd** is commanded without any arugements, then the directory doesn't change.
+When **cd** is commanded without any arugements, the directory doesn't change. Thus nothing happens.
 When **cd** is commanded with a path to a directory, the pwd is changed to the sepcified directory.
-When **cd** is commanded with a path to a file,.....
+When **cd** is commanded with a path to a file, an error messgae is printed that it is not a directory.
 
-When **ls** is commanded without any arugements, .....
+When **ls** is commanded without any arugements, the files of the working directory is listed.
 When **ls** is commanded with a path to a directory, the files and folders within the direcotry is listed in a single line.
-When **ls** is commanded with a path to a file,....
+When **ls** is commanded with a path to a file, the filename is printed.
 
-When **cat** is commanded without any arugements, then the prompt waits for the user to either type a message so that it could be printed or to end the printing stage.
+When **cat** is commanded without any arugements, then the prompt waits for the user to either type a message so that it could be printed until it is stopped manually by the user.
 When **cat** is commanded with a path to a directory, there is an error as cat is used to print a content of a file.
 When **cat** is commanded with a path to a file, the contents of the specified file is printed in its entirety.
 
