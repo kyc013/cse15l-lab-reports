@@ -1,5 +1,5 @@
-# Lab Report 1
-
+# Lab Report 1  
+*Kyungwoo Choi*  
 Some of the basic filesystem commands we learned today was **cd**, **ls**, and **cat**.
 * **cd** is used for changing directory
 * **ls** is used for listing all the files in the directory
@@ -46,7 +46,3 @@ ___
 ![스크린샷(127)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/b122f650-01a9-4754-8f35-7cff23788c78)  
 When **cat** is commanded with a path to a file, the contents of the specified file is printed.
 
-
-    What the working directory was when the command was run
-    A sentence or two explaining why you got that output (e.g. what was in the filesystem, what it meant to have no arguments).
-    Indicate whether the output is an error or not, and if it’s an error, explain why it’s an error.
