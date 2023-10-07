@@ -1,7 +1,7 @@
 Some of the basic filesystem commands we learned today was **cd**, **ls**, and **cat**.
-**cd** is used for changing directory,
-**ls** is used for listing all the files in the directory,
-while **cat** prints the cnontents of whichever file the user selects.
+_**cd** is used for changing directory,
+_**ls** is used for listing all the files in the directory,
+_while **cat** prints the cnontents of whichever file the user selects.
 
 ![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)
 When **cd** is commanded without any arugements, the directory doesn't change. Thus nothing happens.
