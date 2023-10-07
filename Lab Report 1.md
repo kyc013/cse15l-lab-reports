@@ -8,17 +8,14 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 
 ## cd
 
-![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)  
-When **cd** is commanded without any arugements, the working directory would still be *home*. Thus nothing changes.
-___
+`![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)  
+When **cd** is commanded without any arugements, the working directory would still be *home*. Thus nothing changes.`
 
-![스크린샷(124)-2](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/2bf29182-857d-4f37-9ab2-8606a0f9715d)  
-When **cd** is commanded with a path to a directory, the working directory is changed to the sepcified directory.
-___
+`![스크린샷(124)-2](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/2bf29182-857d-4f37-9ab2-8606a0f9715d)  
+When **cd** is commanded with a path to a directory, the working directory is changed to the sepcified directory.`
 
-![스크린샷(124)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/4d8f0106-ff1b-4579-b26e-2b46ac9eb992)  
-When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory.
-___
+`![스크린샷(124)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/4d8f0106-ff1b-4579-b26e-2b46ac9eb992)  
+When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory.`
 ___
 ## ls
 
