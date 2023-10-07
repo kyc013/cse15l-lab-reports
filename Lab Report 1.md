@@ -8,8 +8,8 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 
 ## cd
 
-![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)` 
-1When **cd** is commanded without any arugements, the working directory would still be *home*. Thus nothing changes.`
+![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)  
+`When **cd** is commanded without any arugements, the working directory would still be *home*. Thus nothing changes.`
 
 ![스크린샷(124)-2](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/2bf29182-857d-4f37-9ab2-8606a0f9715d)  
 `When **cd** is commanded with a path to a directory, the working directory is changed to the sepcified directory.`
