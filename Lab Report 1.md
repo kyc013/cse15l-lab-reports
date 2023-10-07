@@ -1,5 +1,6 @@
 # Lab Report 1  
 *Kyungwoo Choi*  
+
 Some of the basic filesystem commands we learned today was **cd**, **ls**, and **cat**.
 * **cd** is used for changing directory
 * **ls** is used for listing all the files in the directory
@@ -47,5 +48,5 @@ ___
 When **cat** is commanded with a path to a file, the contents of the specified file is printed.
 ___
 ___
-This was a blog post on **cd**, **ls**, **cat**. Hope you found it useful.
+*This was a blog post on **cd**, **ls**, **cat**. Hope you found it useful.*
 
