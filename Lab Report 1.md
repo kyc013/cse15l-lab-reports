@@ -1,11 +1,11 @@
-#Lab Report 1
+# Lab Report 1
 
 Some of the basic filesystem commands we learned today was **cd**, **ls**, and **cat**.
 * **cd** is used for changing directory
 * **ls** is used for listing all the files in the directory
 * **cat** prints the cnontents of whichever file the user selects
 
-##cd
+## cd
 
 ![스크린샷(124)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/c5856114-f8a5-4471-bf0e-09879ad91ec5)
 When **cd** is commanded without any arugements, the working directory would still be *home*. Thus nothing changes.
@@ -17,7 +17,7 @@ ___
 When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory.
 ___
 ___
-##ls
+## ls
 
 ![스크린샷(125)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/03b2841b-7c6d-43e9-ad93-0609728ce575)
 When **ls** is commanded without any arugements, the files and folder of the working directory(which is *home* in this case) is listed.
@@ -29,7 +29,7 @@ ___
 When **ls** is commanded with a path to a file, the pat of the file is printed.
 ___
 ___
-##cat
+## cat
 
 ![스크린샷(127)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/23b188b0-6381-4dc9-89d5-994d56131e1b)
 When **cat** is commanded without any arugements, then it waits for the user to type a printable message until manually stopped using **Ctrl, Z**.
