@@ -15,7 +15,9 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 `When **cd** is commanded with a path to a directory, the working directory is changed to the sepcified directory.`
 
 ![스크린샷(124)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/4d8f0106-ff1b-4579-b26e-2b46ac9eb992)  
-`When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory. As we can see,* **cd** *can only be used for directories.`
+```
+When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory. As we can see, **cd** can only be used for directories.
+```
 ***
 ## ls
 
