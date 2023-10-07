@@ -20,7 +20,7 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 ## ls
 
 ![스크린샷(125)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/03b2841b-7c6d-43e9-ad93-0609728ce575)  
-`When commanded without any arugements, the files and folder of the working directory(which is *home* in this case) is listed.`
+`When commanded without any arugements, the files and folder of the working directory(which is 'home' in this case) is listed.`
 
 ![스크린샷(125)-2](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/55ac5b7c-5c13-45e9-8b03-6fa88a760c1f)  
 `When commanded with a path to a directory, the files and folders within the written direcotry is listed.`
