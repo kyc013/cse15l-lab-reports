@@ -16,7 +16,7 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 
 ![스크린샷(124)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/4d8f0106-ff1b-4579-b26e-2b46ac9eb992)  
 `When **cd** is commanded with a path to a file, an error messgae is printed saying that it is not a directory.`
-___
+***
 ## ls
 
 ![스크린샷(125)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/03b2841b-7c6d-43e9-ad93-0609728ce575)  
@@ -27,7 +27,7 @@ ___
 
 ![스크린샷(125)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/55e9ea02-825a-41d6-9d76-4b350db63299)  
 `When **ls** is commanded with a path to a file, the pat of the file is printed.`
-___
+***
 ## cat
 
 ![스크린샷(127)-1](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/23b188b0-6381-4dc9-89d5-994d56131e1b)  
@@ -38,6 +38,6 @@ ___
 
 ![스크린샷(127)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/b122f650-01a9-4754-8f35-7cff23788c78)  
 `When **cat** is commanded with a path to a file, the contents of the specified file is printed.`
-___
+***
 This was a blog post on **cd**, **ls**, **cat**. Hope you found it useful.
 
