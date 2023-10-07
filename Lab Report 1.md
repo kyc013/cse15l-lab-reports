@@ -37,7 +37,7 @@ Some of the basic filesystem commands we learned today was **cd**, **ls**, and *
 `When **cat** is commanded with a path to a directory, there is an error since **cat** is used to print a content of a file.`
 
 ![스크린샷(127)-3](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/b122f650-01a9-4754-8f35-7cff23788c78)  
-`When **cat** is commanded with a path to a file, the contents of the specified file is printed.`
-***
+`When **cat** is commanded with a path to a file, the contents of the specified file is printed.`  
+  
 This was a blog post on **cd**, **ls**, **cat**. Hope you found it useful.
 
