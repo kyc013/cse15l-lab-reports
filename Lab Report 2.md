@@ -1,7 +1,7 @@
 # Lab Report 1  
 *Kyungwoo Choi*  
 
-PT1
+**PT1**
 
 Here is my code for StringServer.java(I also used Server.java that we used in the labs)
 
@@ -55,33 +55,33 @@ Here is my code for StringServer.java(I also used Server.java that we used in th
 
 
 
-Case 1: After /add-message?s=Hi
+*Case 1: After /add-message?s=Hi*
 
 1. The method handleRequest(URI url) is called.
 2. The relevant argument to this method is the URI object "url" which represents the incoming request URL, and the relevant fields of the class "Handler" are:
-   - StringBuilder object "String": Represents the running string.
-   - int variable "num": Represents the next number in the sequence.
-The value of the StringBuilder object "String" is initially an empty string, and the value of the int variable "num" is initially 0. The value of the URI object "url" represents the URL "/add-message?s=Hi".
+   - StringBuilder object "String" representing the running string
+   - int variable "num" representing the next number in order
+The value of "String" is initially an empty string, and the value of "num" is initially 0. The value of "url" represents the URL "/add-message?s=Hi".
 3. After typing in "Hi", the value of the int variable "num" changes from 0 to 1, while the value of the StringBuilder object "String" changes from an empty string to "1. Hi\n".
 
 
 ![스크린샷(168)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/797931bc-7142-4e67-8e86-dad4fc378d6d)
 
-Case 2: After /add-message?s=Welcome
+*Case 2: After /add-message?s=Welcome*
 
 1. The method handleRequest(URI url) is called again.
 2. The relevant argument to this method is again the URI object "url", and the relevant fields of the class "Handler" are again:
    - StringBuilder object "String"
    - int variable "num"
-However, the value of the StringBuilder object "String" is now "1. Hi\n", and the value of the int variable "num" is 1. The value of the URI object "url" represents the URL "/add-message?s=Welcome".
-3. After typing in "Welcome", the value of the int variable "num" changes from 1 to 2., while the value of the StringBuilder object "String" changes from "1. Hi\n" to "1. Hi\n2. Welcome\n".
+However, the value of "String" is now "1. Hi\n", and the value of "num" is 1. The value of "url" now represents the URL "/add-message?s=Welcome".
+3. After typing in "Welcome", the value of "num" changes from 1 to 2., while the value of "String" changes from "1. Hi\n" to "1. Hi\n2. Welcome\n".
 
-PT2
+**PT2**
 
 ![스크린샷(169)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/b6f7e2d2-85b1-43dd-8f51-dde35b9f21fe)
 ![스크린샷(171)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/0d787220-c3a1-40ff-b094-4db6d4f0a25b)
 ![스크린샷(170)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/2aebbd67-f19b-460e-a1ae-12cc40e171cc)
 
-PT3
-In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
+**PT3**
 
+I can't say for the rest of the students taking this class, but I didn't know how to do any of these things before. Learning commands such as pwd, cat, cd, ls, curl etc was interesting, as was accessing remote servers from a local computer. 
