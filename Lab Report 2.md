@@ -3,7 +3,7 @@
 
 **PT1**
 
-Here is my code for StringServer.java(I also used Server.java that we used in the labs)
+Here is my StringServer.java(I also used Server.java that we used during the labs)
 
 
     import java.io.IOException;
