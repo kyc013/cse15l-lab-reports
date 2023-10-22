@@ -25,12 +25,10 @@ private int num = 0;
                     String.append(num).append(". ").append(message).append("\n");
                     return String.toString();
                     }
-        }
-                    
-                    return "Invalid request";
-            }
-
+        }     
+        return "Invalid request";
     }
+}
 
 
 class StringServer {
