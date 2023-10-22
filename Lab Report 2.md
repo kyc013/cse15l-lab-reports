@@ -59,7 +59,7 @@ Here is my StringServer.java(I also used Server.java that we used during the lab
    - StringBuilder object "String" representing the running string
    - int variable "num" representing the next number in order
      
-The value of "String" is initially an empty string, and the value of "num" is initially 0. The value of "url" represents the URL "/add-message?s=Hi".
+The value of "String" is initially an empty string, and the value of "num" is initially 0. The value of "url" represents the URL "/add-message?s=Hi".  
 3. After typing in "Hi", the value of "num" changes from 0 to 1, while the value of "String" changes from an empty string to "1. Hi\n".
 
 
@@ -71,7 +71,7 @@ The value of "String" is initially an empty string, and the value of "num" is in
    - StringBuilder object "String"
    - int variable "num"
      
-However, the value of "String" is now "1. Hi\n", and the value of "num" is 1. The value of "url" now represents the URL "/add-message?s=Welcome".
+However, the value of "String" is now "1. Hi\n", and the value of "num" is 1. The value of "url" now represents the URL "/add-message?s=Welcome".  
 3. After typing in "Welcome", the value of "num" changes from 1 to 2., while the value of "String" changes from "1. Hi\n" to "1. Hi\n2. Welcome\n".
 
 **PT2**
