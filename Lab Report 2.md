@@ -51,11 +51,8 @@ Here is my StringServer.java(I also used Server.java that we used during the lab
 
 
 
-![스크린샷(167)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/0ff2d04d-2cde-4a51-abfa-248ee4253436)
-
-
-
 *Case 1: After /add-message?s=Hi*
+![스크린샷(167)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/0ff2d04d-2cde-4a51-abfa-248ee4253436)
 
 1. The method handleRequest(URI url) is called.
 2. The relevant argument to this method is the URI object "url" which represents the incoming request URL, and the relevant fields of the class "Handler" are:
@@ -65,9 +62,8 @@ The value of "String" is initially an empty string, and the value of "num" is in
 3. After typing in "Hi", the value of the int variable "num" changes from 0 to 1, while the value of the StringBuilder object "String" changes from an empty string to "1. Hi\n".
 
 
-![스크린샷(168)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/797931bc-7142-4e67-8e86-dad4fc378d6d)
-
 *Case 2: After /add-message?s=Welcome*
+![스크린샷(168)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/797931bc-7142-4e67-8e86-dad4fc378d6d)
 
 1. The method handleRequest(URI url) is called again.
 2. The relevant argument to this method is again the URI object "url", and the relevant fields of the class "Handler" are again:
