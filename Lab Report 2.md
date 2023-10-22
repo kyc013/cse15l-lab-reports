@@ -1,9 +1,10 @@
 # Lab Report 1  
 *Kyungwoo Choi*  
+
 PT1
 
 Here is my code for StringServer.java(I also used Server.java that we used in the labs)
-...
+
 
     import java.io.IOException;
     import java.net.URI;
@@ -47,20 +48,33 @@ Here is my code for StringServer.java(I also used Server.java that we used in th
             Server.start(port, new Handler());
         }
     }
-...
+
 
 
 ![스크린샷(167)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/0ff2d04d-2cde-4a51-abfa-248ee4253436)
 
-    Since I typed 'add-messages', the url.getPath() in the else if was called, and then the if statement.
-    The message "Hi" is the arguementWhat are the relevant arguments to those methods, and the values of any relevant fields of the class?
-    How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
+
+Case 1: After /add-message?s=Hi
+
+1. The method handleRequest(URI url) is called.
+2. The relevant argument to this method is the URI object "url" which represents the incoming request URL, and the relevant fields of the class "Handler" are:
+   - StringBuilder object "String": Represents the running string.
+   - int variable "num": Represents the next number in the sequence.
+The value of the StringBuilder object "String" is initially an empty string, and the value of the int variable "num" is initially 0. The value of the URI object "url" represents the URL "/add-message?s=Hi".
+3. After typing in "Hi", the value of the int variable "num" changes from 0 to 1, while the value of the StringBuilder object "String" changes from an empty string to "1. Hi\n".
+
 
 ![스크린샷(168)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/797931bc-7142-4e67-8e86-dad4fc378d6d)
 
-    Which methods in your code are called?
-    What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-    How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+Case 2: After /add-message?s=Welcome
+
+1. The method handleRequest(URI url) is called again.
+2. The relevant argument to this method is again the URI object "url", and the relevant fields of the class "Handler" are again:
+   - StringBuilder object "String"
+   - int variable "num"
+However, the value of the StringBuilder object "String" is now "1. Hi\n", and the value of the int variable "num" is 1. The value of the URI object "url" represents the URL "/add-message?s=Welcome".
+3. After typing in "Welcome", the value of the int variable "num" changes from 1 to 2., while the value of the StringBuilder object "String" changes from "1. Hi\n" to "1. Hi\n2. Welcome\n".
 
 PT2
 
