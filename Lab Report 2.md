@@ -82,4 +82,4 @@ However, the value of "String" is now "1. Hi\n", and the value of "num" is 1. Th
 
 **PT3**
 
-I can't say for the rest of the students taking this class, but I didn't know how to do any of these things before. Learning commands such as pwd, cat, cd, ls, curl etc was interesting, as was accessing remote servers from a local computer. 
+I can't say for the rest of the students taking this class, but I didn't know how to do any of these things before. Learning commands such as pwd, cat, cd, ls, curl etc was fun, as was accessing remote servers from a local computer. One thing I recognize the importnace of initally was the working directory. As I participate in the labs however, I found myself making mistakes becausse I was in the wrong directory without realizing it. For instance, I'd try to compile my java file inside the folder when I'm stil in the home directory, which obviously didn't work until I tried cd. A basic concept, but I think it's still crucial for any stage you're in.
