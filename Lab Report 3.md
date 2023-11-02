@@ -1,4 +1,4 @@
-# Lab Report 2 
+# Lab Report 3 
 *Kyungwoo Choi*  
 
 **PT1 - Bugs**
