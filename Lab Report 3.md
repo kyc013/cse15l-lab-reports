@@ -3,10 +3,11 @@
 
 **PT1 - Bugs**
 
-    A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-    An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-    The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-    The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+
 I'll be talking about the bug in the *static int[] reversed* inside ArrayExamples.java
 Any test input that isn't an empty array would come out as a failure, as it always prints out an empty array. An empty array would always come out as a test success.
     Briefly describe why the fix addresses the issue.
