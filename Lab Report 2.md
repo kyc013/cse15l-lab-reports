@@ -72,8 +72,8 @@ However, the value of "String" is now "1. Hi\n", and the value of "num" is 1. Th
 
 **PT2**
 
-![스크린샷(169)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/b6f7e2d2-85b1-43dd-8f51-dde35b9f21fe)
-![스크린샷(171)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/0d787220-c3a1-40ff-b094-4db6d4f0a25b)
+![스크린샷(173)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/248720c7-8684-45e3-86e0-d315c4eaa16c)
+![스크린샷(174)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/6c88eaaf-f4ac-42d8-906e-b13cc0b05f03)
 ![스크린샷(170)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/2aebbd67-f19b-460e-a1ae-12cc40e171cc)
 
 **PT3**
