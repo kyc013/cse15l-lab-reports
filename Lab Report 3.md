@@ -1,15 +1,19 @@
-Part 1 - Bugs
-Choose one of the bugs from lab 4.
-Provide:
+# Lab Report 2 
+*Kyungwoo Choi*  
+
+**PT1 - Bugs**
+
     A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
     An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
     The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
     The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+I'll be talking about the bug in the *static int[] reversed* inside ArrayExamples.java
+Any test input that isn't an empty array would come out as a failure, as it always prints out an empty array. An empty array would always come out as a test success.
+    Briefly describe why the fix addresses the issue.
+As we're supposed to return an array that all the elements of the input array in reversed order, we should change the body of the for loop so that the values of the newArray are changed, and that the newArray is returned.
 
-Briefly describe why the fix addresses the issue.
+**PT2 - Researching Commands**
 
-
-Part 2 - Researching Commands
 Consider the commands less, find, and grep. Choose one of them. Online, find 4 interesting command-line options or alternate ways to use the command you chose. To find information about the commands, a simple Web search like “find command-line options” will probably give decent results. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands; you can use man grep, for example, to see a long listing of information about how grep works. Also consider asking ChatGPT!
 For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
 That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
