@@ -10,21 +10,21 @@ Any test input that isn't an empty array, such as `{3,5,7}`, would come out as a
 An empty array`{}`, however, would always come out as a test success.  
 ![스크린샷(188)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/5c12492c-7ff7-42a7-87c5-21a04d538b99)  
 
-`  static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
+`  static int[] reversed(int[] arr) {  
+    int[] newArray = new int[arr.length];  
+    for(int i = 0; i < arr.length; i += 1) {  
+      arr[i] = newArray[arr.length - i - 1];  
+    }  
+    return arr;  
   }
   `  
 As we're supposed to return an array that all the elements of the input array in reversed order, we should change the body of the for loop so that the values of the newArray are changed, and that the newArray is returned.  
-`  static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      newArray[i] = arr[arr.length - i - 1];
-    }
-    return newArray;
+`  static int[] reversed(int[] arr) {  
+    int[] newArray = new int[arr.length];  
+    for(int i = 0; i < arr.length; i += 1) {  
+      newArray[i] = arr[arr.length - i - 1];  
+    }  
+    return newArray;  
   }
 `  
 
