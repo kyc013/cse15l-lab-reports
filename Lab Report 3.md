@@ -33,29 +33,64 @@ I'll be talking about the command `grep`
 There are several options for `grep`, the following being some of them(all the options below are from the link *https://www.geeksforgeeks.org/grep-command-in-unixlinux/*):  
   
 -c : This prints only a count of the lines that match a pattern  
--i : Ignores, case for matching  
+-i : Ignores case for matching  
 -v : This prints out all the lines that do not matches the pattern  
 -w : Match whole word  
 
-`grep -c "e" biomed`
-`grep: biomed: Is a directory`
+Below are the examples of what happens when we use each option for a directory. Our working direcotry is /docsearch/technical, and we will be using `grep` for a directory called biomed.  
+`grep -c "e" biomed`  
+`grep: biomed: Is a directory`  
 
-`grep -c "e" biomed/bcr458.txt`
+`grep -i "e" biomed`  
+`grep: biomed: Is a directory`  
 
-`grep -i "e" biomed`
-`grep: biomed: Is a directory`
+`grep -v "e" biomed`  
+`grep: biomed: Is a directory`  
 
-`grep -i "e" biomed/bcr458.txt`
+`grep -w "e" biomed`  
+`grep: biomed: Is a directory`  
 
-`grep -v "e" biomed`
-`grep: biomed: Is a directory`
-
-`grep -v "e" biomed/bcr458.txt`
-
-`grep -w "e" biomed`
-`grep: biomed: Is a directory`
-
-`grep -w "e" biomed/bcr458.txt`
-
-Show each example as a `code block` that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
+As we can see by the outputs, `grep` cannot be used for a directory.  
+Let's try this on a file called 1471-2202-4-12.txt inside biomed.  
+`grep -c "e" biomed/1471-2202-4-12.txt`
+`350`
+As we can see from the output, if we wish to see how many lines inside the file that has the letter 'e', we can use `grep -c`.  
+  
+`grep -i "e" biomed/1471-2202-4-12.txt`
+`Focal damage to the developing brain can have widespread  
+consequences for structures and regions that project to or  
+receive direct or even indirect projections from the  
+damaged area [ 1 2 3 ] . Focal neocortical malformations  
+induced by freeze injury to the developing cortical plate
+...(continued)...`  
+`perfusions of Study 2. ANY performed the anatomic measures  
+and collaborated on the statistical analysis. GDR performed  
+the freezing lesions, supervised the anatomic measures,  
+supervised the final data analysis, and participated in the  
+drafting of the manuscript. All authors have read and  
+approved the final manuscript.`  
+As we can see from the output, if we wish to see all the lines inside the file with the letter 'e' regardless of whether it is 'E' or 'e', we can use `grep -i`.  
+  
+`grep -v "e" biomed/1471-2202-4-12.txt`
+`Background
+          paradigm [ 15 19 20 21 ] . In both paradigms, auditory`
+      
+      
+        
+        condition (F 
+          2,34 = 18.1, P < .001), with
+          2,50 = 508.6, P < .001), but no
+      ...(continued)...
+        P - Postnatal Day
+        E - Embryonic Day
+      
+      
+        Authors' contributions`
+As we can see from the output, if we wish to see all the lines inside the file without the letter 'e'. we can use `grep -v`. Additionally, any lines that do not match the case, in this case 'E', are still printed.  
+  
+`grep -w "e" biomed/1471-2202-4-12.txt`
+`        (e.g.,.Refs. [ 27 28 ] ). Further, reorganization (i.e.,
+        (e.g., behavior, brain weight, thalamic morphology [ 14 30
+        alterations (e.g., in function) may reflect a developmental`
+As we can see from the output, if we wish to see all the lines that have the words specifically matching 'e' inside the file, we can use `grep -w`. 
 
