@@ -30,14 +30,32 @@ As we're supposed to return an array that all the elements of the input array in
 
 **PT2 - Researching Commands**  
 I'll be talking about the command `grep`  
-There are several options for `grep`, the following being some of them:  
+There are several options for `grep`, the following being some of them(all the options below are from the link *https://www.geeksforgeeks.org/grep-command-in-unixlinux/*):  
   
 -c : This prints only a count of the lines that match a pattern  
 -i : Ignores, case for matching  
 -v : This prints out all the lines that do not matches the pattern  
 -w : Match whole word  
-The options above are from the link *https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 
-**For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a `code block` that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options.**
+`grep -c "e" biomed`
+`grep: biomed: Is a directory`
+
+`grep -c "e" biomed/bcr458.txt`
+
+`grep -i "e" biomed`
+`grep: biomed: Is a directory`
+
+`grep -i "e" biomed/bcr458.txt`
+
+`grep -v "e" biomed`
+`grep: biomed: Is a directory`
+
+`grep -v "e" biomed/bcr458.txt`
+
+`grep -w "e" biomed`
+`grep: biomed: Is a directory`
+
+`grep -w "e" biomed/bcr458.txt`
+
+Show each example as a `code block` that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
 
