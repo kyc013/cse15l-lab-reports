@@ -5,9 +5,21 @@
 
 I'll be talking about the bug in the method *static int[] reversed* inside **ArrayExamples.java**  
 Any test input that isn't an empty array, such as `{3,5,7}`, would come out as a failure, as the output is always an empty array.  
+```
+  public void testReversed() {
+    int[] input1 = {3,5,7};
+    assertArrayEquals(new int[]{7,5,3}, ArrayExamples.reversed(input1));
+  }
+```  
 ![스크린샷(189)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/a63153d8-ede8-4517-be87-d2d360360ced)  
   
 An empty array`{}`, however, would always come out as a test success.  
+```
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```  
 ![스크린샷(188)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/5c12492c-7ff7-42a7-87c5-21a04d538b99)  
 ```
   static int[] reversed(int[] arr) {  
