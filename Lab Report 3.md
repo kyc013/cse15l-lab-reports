@@ -50,25 +50,55 @@ There are several options for `grep`, the following being some of them(all the o
 `-v` : This prints out all the lines that do not matches the pattern  
 `-w` : Match whole word  
 
-Below are the examples of what happens when we use each option for a directory. Our working direcotry is `/docsearch/technical`, and we will be using `grep` for a directory called `biomed`.  
+Below are the examples of what happens when we use each option for a directory. Our working direcotry is `/docsearch/technical`, and we will be using `grep` for a file called `1471-2202-4-12.txt` inside `biomed`.  
 ```
-grep -c "e" biomed
-grep: biomed: Is a directory
+grep -c "example" biomed/1471-2202-4-12.txt
+3
 ```
+As we can see from the output, if we wish to see how many lines inside the file that has the word 'example', we can use `grep -c`.  
+  
 ```
-grep -i "e" biomed
-grep: biomed: Is a directory
+grep -i "example" biomed/1471-2202-4-12.txt
+] . For example, brain slices containing microgyric cortex
+maladaptive in all cases. For example, the presence of
+in other studies; for example, our auditory environment
 ```
+As we can see from the output, if we wish to see all the lines inside the file with the word 'example' regardless of whether it is in capitals or not, we can use `grep -i`.  
+  
 ```
-grep -v "e" biomed
-grep: biomed: Is a directory
+grep -v "example" biomed/1471-2202-4-12.txt
+Background
+        Focal damage to the developing brain can have widespread
+        consequences for structures and regions that project to or
+        receive direct or even indirect projections from the
+        damaged area [ 1 2 3 ] . Focal neocortical malformations
+        induced by freeze injury to the developing cortical plate
+        exemplify this fact. It has been shown that these
+        malformations, resembling human microgyria, are associated
+        with widespread disturbances in neuronal organization [ 4 5
+...(continued)...
+        manuscript. RHF supervised all aspects of the study and
+        participated in all aspects of its design, coordination,
+        and drafting. JJT performed the auditory testing and
+        perfusions of Study 2. ANY performed the anatomic measures
+        and collaborated on the statistical analysis. GDR performed
+        the freezing lesions, supervised the anatomic measures,
+        supervised the final data analysis, and participated in the
+        drafting of the manuscript. All authors have read and
+        approved the final manuscript.
 ```
+As we can see from the output, if we wish to see all the lines inside the file without the word 'example'. we can use `grep -v`.  
+  
 ```
-grep -w "e" biomed
-grep: biomed: Is a directory
+grep -w "example" biomed/1471-2202-4-12.txt
+] . For example, brain slices containing microgyric cortex
+maladaptive in all cases. For example, the presence of
+in other studies; for example, our auditory environment
 ```
-As we can see by the outputs, `grep` cannot be used for a directory.  
-Let's try this on a file called `1471-2202-4-12.txt` inside `biomed`.  
+As we can see from the output, if we wish to see all the lines that have the words specifically matching 'example' inside the file, we can use `grep -w`.  
+  
+  
+Let's try grep using a letter instead of a word.  
 ```
 grep -c "e" biomed/1471-2202-4-12.txt
 350
