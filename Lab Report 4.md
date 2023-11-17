@@ -21,13 +21,13 @@ Step 4) Edit the code file ListExamples.java to fix the failing test
 Keys pressed: `vim List <tab> .java <enter> i <backspace> 2 <esc> : w q <enter>`  
 I pressed `vim` to edit the file, typed `List` and then `<tab>` which made the terminal finish the name `ListExamples`.  
 I then added `.java` and then `<enter>` which allowed me to enter 'ListExamples.java' with vim.  
-I pressed `i` which allowed to go into insert mode, <backspace> and `2` which was the necessary edit,  
+I pressed `i` which allowed to go into insert mode, `<backspace>` and `2` which was the necessary edit,  
 `<esc>` to escape insert mode, and then `: w q <enter>` to save and exit.  
   
 Step 5) Run the tests, demonstrating that they now succeed  
 ![step5](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/ae86bde6-77c3-41ee-b01e-da34c5b84e3d)  
 Keys pressed: `<up> <up> <enter>`  
-I pressed <up> twice because `bash test.sh` was 2 up in the search history, so I used the up arrow to access it.  
+I pressed `<up>` twice because `bash test.sh` was 2 up in the search history, so I used the up arrow to access it.  
   
 Step 6) Commit and push the resulting change to your Github account  
 ![step6](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/bd8ac539-a4c7-419b-bbf5-0c96390310f6)  
@@ -35,5 +35,5 @@ Keys pressed: `git status <enter> git add List <tab> .java <enter> git status <e
 I typed `git status` to see any modified changes. 
 I typed `git add` and then `List <tab>` which made the terminal finish the name `ListExamples`, and then added `.java`.  
 This added the modified changes to the staging area.  
-I pressed <up> twice because `git status` was 2 up in the search history.  
+I pressed `<up>` twice because `git status` was 2 up in the search history.  
 I then typed `git commit -m` to commit the modified changes, and then the message `"fixed ListExamples.java"` so I would know what the change was.  
