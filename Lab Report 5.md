@@ -3,24 +3,99 @@
   
 **Pt1 – Debugging Scenario**  
 1. <Original Post>  
+![스크린샷(189)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/a63153d8-ede8-4517-be87-d2d360360ced)  
+The symptom shows a failure in the `testReversed` method.
+```
+  static int[] reversed(int[] arr) {  
+    int[] newArray = new int[arr.length];  
+    for(int i = 0; i < arr.length; i += 1) {  
+      arr[i] = newArray[arr.length - i - 1];  
+    }  
+    return arr;  
+  }
+```
+I think `newArray` should be returned instead of `arr`, but I'm not sure what else is wrong.  
+It works with an empty array, but nothing else.  
+  
 2. <TA Response>  
+Remember that the goal of the method is to return a `newArray` with the contents of `arr` in reversed order.  
+Think about why it might work with certain inputs and not others.  
+Good luck!  
 
-1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is.
-2. A fake response from a TA asking a leading question or suggesting a command to try
-3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
-4.  At the end, all the information needed about the setup including:
-        The file & directory structure needed
-        The contents of each file before fixing the bug
-        The full command line (or lines) you ran to trigger the bug
-        A description of what to edit to fix the bug
+3. <Student Response>  
+Thank you for your help.  
+I've fixed the code and I think it works with all other inputs as well.  
+```
+  static int[] reversed(int[] arr) {  
+    int[] newArray = new int[arr.length];  
+    for(int i = 0; i < arr.length; i += 1) {  
+      newArray[i] = arr[arr.length - i - 1];  
+    }  
+    return newArray;  
+  }
+```  
+I changed the `for` loop so that the contents of `newArray` would be newly written with the contents of `arr` in reversed order.  
+I also changed `return arr` to `return newArray`.  
+  
+![280444427-5c12492c-7ff7-42a7-87c5-21a04d538b99](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/f6ef9d7a-998e-4ccc-a96b-04cf087667ec)
+This is the successful result I got after running the command `bash test.sh`.  
+  
+4. <Overview>  
+The file & directory structure needed:  
+-home/  
+  - ArrayTests.java
+  - ArrayExamples.java
+  - test.sh
+  - lib/
+    - hamcrest-core-1.3.jar
+    - junit-4.13.2.jar  
+  
+The contents of each file before fixing the bug:  
+**ArrayTests.java**  
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+  @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+}
+```  
+**ArrayExamples.java**
+```
+public class ArrayExamples {
+
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+}
+```  
+**test.sh**
+```
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+```
+  
+The full command line (or lines) you ran to trigger the bug:
+`bash test.sh`  
+
+A description of what to edit to fix the bug:  
 
 You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script.
 Describing the bug should involve reading some output at the terminal resulting from running one or more commands. 
 Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior!
-Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
 
 **Pt2 – Reflection**  
-
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before.
-It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on.
-It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
+  
+This was the first time I learned about vim and editing the contents of a file through the terminal.  
+It was interesting to know that I don't have to rely on a GUI and could directly make changes through the terminal.
+Overall, the lab sessions were very informative and helpful.
