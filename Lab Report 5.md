@@ -89,11 +89,11 @@ The full command line (or lines) you ran to trigger the bug:
 `bash test.sh`  
 
 A description of what to edit to fix the bug:  
-
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script.
-Describing the bug should involve reading some output at the terminal resulting from running one or more commands. 
-Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior!
-
+Any test input that isn’t an empty array, such as {3,5,7}, would come out as a failure, as the output is always an empty array.  
+An empty array{}, however, would always come out as a test success.  
+As we’re supposed to return an array that all the elements of the input array in reversed order,  
+we should change the body of the for loop so that the values of the newArray are changed, and that the newArray is returned.  
+  
 **Pt2 – Reflection**  
   
 This was the first time I learned about vim and editing the contents of a file through the terminal.  
