@@ -3,7 +3,7 @@
   
 **Pt1 – Debugging Scenario**  
 1. <Original Post>  
-![스크린샷(189)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/a63153d8-ede8-4517-be87-d2d360360ced)  
+![280444447-a63153d8-ede8-4517-be87-d2d360360ced(1)](https://github.com/kyc013/cse15l-lab-reports/assets/147003854/318c4456-40c0-4613-9e7e-306ca8eae2bd)
 The symptom shows a failure in the `testReversed` method.
 ```
   static int[] reversed(int[] arr) {  
